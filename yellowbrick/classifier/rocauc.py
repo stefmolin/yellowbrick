@@ -235,7 +235,19 @@ class ROCAUC(ClassificationScoreVisualizer):
                 (
                     "{} does not support target type '{}', "
                     "please provide a binary or multiclass single-output target"
-                ).format(self.__class__.__name__, ttype)
+                ).format(
+                    
+                    
+                    
+                    
+                    
+                    self.__class__.__name__, ttype
+                    
+                    
+                    
+                    
+                    
+                    )
             )
 
         # Fit the model and return self
