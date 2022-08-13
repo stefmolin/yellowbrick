@@ -38,4 +38,4 @@ jobs:
 
       - name: Run checks
         run: |
-          pre-commit run --from-ref origin/${{ github.head_ref }} --to-ref origin/${{ github.base_ref }}
+          pre-commit run --from-ref ${{ github.ref }} --to-ref origin/${{ github.base_ref }}
