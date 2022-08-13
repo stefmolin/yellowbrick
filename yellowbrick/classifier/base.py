@@ -149,7 +149,7 @@ class ClassificationScoreVisualizer(ScoreVisualizer):
         """
         if not hasattr(self, "_colors"):
             if not hasattr(self, "classes_"):
-                raise NotFitted("cannot determine colors before fit")
+                raise NotFitted( "cannot determine colors before fit" )
 
             # TODO: replace with resolve_colors
             self._colors = color_palette(None, len(self.classes_))

@@ -239,7 +239,12 @@ class ROCAUC(ClassificationScoreVisualizer):
             )
 
         # Fit the model and return self
-        return super(ROCAUC, self).fit(X, y)
+        return super(
+            ROCAUC, self
+            ).fit(
+                X,
+                 y
+                 )
 
     def score(self, X, y=None):
         """
