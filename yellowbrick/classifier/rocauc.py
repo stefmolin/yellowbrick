@@ -208,9 +208,9 @@ class ROCAUC(ClassificationScoreVisualizer):
         # Set the visual parameters for ROCAUC
         # NOTE: the binary flag breaks our API since it's really just a meta parameter
         # for micro, macro, and per_class. We knew this going in, but did it anyway.
-        
+
         self.binary = binary
-        
+
         if self.binary:
             self.micro = False
             self.macro = False
@@ -239,14 +239,9 @@ class ROCAUC(ClassificationScoreVisualizer):
             )
 
         # Fit the model and return self
-        return super(
-            ROCAUC, self
-            ).fit(
-                X,
-                 y
-                 )
+        return super(ROCAUC, self).fit(X, y)
 
-    def score(self, X, y=None):
+    def score(self, X, y = None):
         """
         Generates the predicted target values using the Scikit-Learn
         estimator.
