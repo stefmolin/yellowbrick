@@ -21,7 +21,6 @@ jobs:
     name: Linting
     steps:
       - name: Checkout Code
-        uses: actions/checkout@v2
         run: |
           commits=${{ github.event.pull_request.commits }}
           git fetch --depth="$(( commits + 1 ))"
